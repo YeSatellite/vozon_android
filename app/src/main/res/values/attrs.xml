@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AppTheme">
+        <attr name="textColorLarge" format="color" />
+        <attr name="lineColor" format="color" />
+        <attr name="appBackground" format="color" />
+        <attr name="appBackgroundCard" format="color" />
+        <attr name="appIconColor" format="color" />
+
+
+        <attr name="iconAdd" format="reference" />
+        <attr name="iconFilter" format="reference" />
+    </declare-styleable>
+</resources>

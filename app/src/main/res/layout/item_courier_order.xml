@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="@dimen/space"
+        android:background="@drawable/rounded_grey"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/v_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="5dp"
+            app:srcCompat="@drawable/tmp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/v_title"
+                style="@style/LargeTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="14dp"
+                tools:text="Volkswagen Polo" />
+
+            <TextView
+                android:id="@+id/v_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="10sp"
+                tools:text="Седан • Грузчики" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/start_point"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/v_start_point"
+                style="@style/LargeTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="12sp"
+                tools:text="Павлодар, Каза*стан" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/end_point"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/v_end_point"
+                style="@style/LargeTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/not_matter"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/space"
+        android:layout_marginStart="@dimen/space"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/v_avatar"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="5dp"
+            tools:srcCompat="@drawable/tmp" />
+
+        <TextView
+            android:id="@+id/v_name"
+            style="@style/LargeTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="fill_vertical"
+            tools:text="Peter Quill" />
+
+        <TextView
+            android:id="@+id/v_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="12sp"
+            tools:text="14, Май" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/space"
+        android:layout_marginStart="@dimen/space" />
+
+</LinearLayout>

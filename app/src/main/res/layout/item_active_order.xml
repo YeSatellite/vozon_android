@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/space"
+        android:layout_marginStart="@dimen/space"
+        android:layout_marginTop="@dimen/space"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/v_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="5dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@drawable/tmp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/v_title"
+                style="@style/LargeTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/c_image"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Доставить книги до дома" />
+
+            <TextView
+                android:id="@+id/v_t_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/v_t_name"
+                app:layout_constraintTop_toBottomOf="@+id/v_t_name"
+                tools:text="Внутри города" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/v_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="14, Май" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/include_route"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/v_transport" />
+
+    <include
+        layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/space"
+        android:layout_marginStart="@dimen/space" />
+
+    <Button
+        android:id="@+id/v_your_courier"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="Ваш курьер"
+        android:textAllCaps="false"
+        android:textColor="@color/appBlue"
+        android:textSize="20sp" />
+
+    <include
+        layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</LinearLayout>

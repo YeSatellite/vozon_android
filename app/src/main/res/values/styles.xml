@@ -1,0 +1,132 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@color/colorStatusBar</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowBackground">@color/appWindowBackground</item>
+        <item name="appBackground">@color/appBackground</item>
+        <item name="appBackgroundCard">@color/appBackground</item>
+        <item name="android:editTextBackground">@android:color/white</item>d
+        <item name="lineColor">@color/lineColor</item>
+
+        <item name="android:editTextColor">@color/appEditTextColor</item>
+        <item name="android:textColor">@color/appTextColor</item>
+        <item name="textColorLarge">@color/appTextLargeColor</item>
+
+        <item name="android:textColorHint">@color/appTextHindColor</item>
+
+        <item name="actionBarStyle">@style/AppActionBar</item>
+        <item name="actionMenuTextColor">?textColorLarge</item>
+        <item name="android:homeAsUpIndicator">@drawable/left_</item>
+        <item name="appIconColor">@color/appTextLargeColor</item>
+
+        <item name="iconAdd">@drawable/add</item>
+        <item name="iconFilter">@drawable/filter_</item>
+
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppThemeDark" parent="AppTheme">
+        <item name="colorPrimary">@color/colorStatusBarDark</item>
+        <item name="colorPrimaryDark">@color/colorStatusBarDark</item>
+
+        <item name="android:windowBackground">@color/appWindowBackgroundDark</item>
+        <item name="appBackground">@color/appBackgroundDark</item>
+        <item name="appBackgroundCard">@color/appTextBackgroundDark</item>
+        <item name="android:editTextBackground">@color/appTextBackgroundDark</item>
+        <item name="lineColor">@color/lineColorDark</item>
+
+        <item name="android:editTextColor">@color/appEditTextColorDark</item>
+        <item name="android:textColor">@color/appTextColorDark</item>
+        <item name="textColorLarge">@color/appTextLargeColorDark</item>
+        <item name="android:homeAsUpIndicator">@drawable/left_white_</item>
+        <item name="appIconColor">@color/appTextColorDark</item>
+
+        <item name="iconAdd">@drawable/add_white</item>
+        <item name="iconFilter">@drawable/filter_w_</item>
+    </style>
+    <style name="AppThemeDark.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="titleTextStyle">@style/AppTitleTextStyle</item>
+        <item name="subtitleTextStyle">@style/AppSubtitleTextStyle</item>
+    </style>
+    <style name="AppTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">?textColorLarge</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="AppSubtitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">?textColorLarge</item>
+    </style>
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:background">?colorPrimary</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+    </style>
+    <style name="ToolBarStyle.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="ProfileEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">?textColorLarge</item>
+        <item name="android:drawablePadding">@dimen/space</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingStart">@dimen/space</item>
+        <item name="android:paddingEnd">@dimen/space</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    <style name="LargeTextViewStyle">
+        <item name="android:textColor">?textColorLarge</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    <style name="LargeTextViewStyle.Icon">
+        <item name="android:drawablePadding">@dimen/space</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingStart">@dimen/space</item>
+        <item name="android:paddingEnd">@dimen/space</item>
+    </style>
+    <style name="RadioGroupStyle">
+        <item name="android:textColor">?textColorLarge</item>
+        <item name="android:drawablePadding">@dimen/space</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingStart">@dimen/space</item>
+        <item name="android:paddingEnd">@dimen/space</item>
+    </style>
+    <style name="RadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@drawable/radio_text_color</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingStart">@dimen/space</item>
+        <item name="android:paddingEnd">@dimen/space</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="PagerSlidingTabStrip">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="MyRatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="colorAccent">@color/appBlue</item>
+    </style>
+
+    <style name="TabTextAppearance">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

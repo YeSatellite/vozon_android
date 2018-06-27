@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?appBackground"
+    android:orientation="vertical"
+    tools:context=".ui.auth.XSignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/space">
+
+            <include
+                layout="@layout/include_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <EditText
+                android:id="@+id/v_type"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:drawableEnd="@drawable/next_"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:hint="@string/type"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/v_start_point"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/next_"
+                android:focusable="false"
+                android:hint="@string/transport_position"
+                android:inputType="text" />
+
+            <include
+                layout="@layout/include_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/v_end_point"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/next_"
+                android:focusable="false"
+                android:hint="@string/destination"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="3dp"
+                android:paddingEnd="@dimen/space"
+                android:paddingStart="@dimen/space"
+                android:paddingTop="40dp"
+                android:text="@string/date_departure"
+                android:textAllCaps="true"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/v_start_date"
+                    style="@style/ProfileEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:hint="ОТ"
+                    android:inputType="date" />
+
+                <include
+                    layout="@layout/include_line"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:id="@+id/v_end_date"
+                    style="@style/ProfileEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:hint="ДО"
+                    android:inputType="date" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="3dp"
+                android:paddingEnd="@dimen/space"
+                android:paddingStart="@dimen/space"
+                android:text="Укажите промежуток времени"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

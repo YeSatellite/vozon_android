@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/m_route"
+        android:icon="@drawable/explore_d_"
+        android:title="Route" />
+
+    <item
+        android:id="@+id/m_transport"
+        android:icon="@drawable/wheel_"
+        android:title="Transport" />
+
+    <item
+        android:id="@+id/m_order"
+        android:icon="@drawable/document_d_"
+        android:title="Order" />
+
+    <item
+        android:id="@+id/m_profile"
+        android:icon="@drawable/user_d_"
+        android:title="Profile" />
+
+</menu>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kz.vozon.vozon">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="kz.vozon.vozon.ui.StartActivity"
+            android:theme="@style/AppThemeDark.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="kz.vozon.vozon.ui.info.InfoTmpActivity" />
+        <activity android:name="kz.vozon.vozon.ui.info.LocationActivity"
+            android:label="Страна"/>
+        <activity android:name="kz.vozon.vozon.ui.info.MultiInfoActivity" />
+        <activity android:name="kz.vozon.vozon.ui.info.TermsActivity"
+            android:label="@string/terms_of_service"/>
+        <activity
+            android:name="kz.vozon.vozon.ui.auth.LoginActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:label="@string/enter_sms"/>
+        <activity android:name="kz.vozon.vozon.ui.auth.SendSmsActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="kz.vozon.vozon.ui.auth.XSignUpActivity"
+            android:label="@string/registration"/>
+        <activity android:name="kz.vozon.vozon.ui.auth.YSignUpNextActivity"
+            android:label="@string/registration"/>
+        <activity android:name="kz.vozon.vozon.ui.auth.SignUpActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/registration"/>
+        <activity android:name="kz.vozon.vozon.ui.auth.YSignUpActivity"
+            android:label="@string/registration"/>
+
+        <activity android:name="kz.vozon.vozon.ui.client.XSettingActivity"
+            android:label="@string/settings"/>
+        <activity android:name="kz.vozon.vozon.ui.client.XMainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="kz.vozon.vozon.ui.client.posted.XOrderPDetailActivity" />
+        <activity android:name="kz.vozon.vozon.ui.client.posted.XOfferListActivity"
+            android:label="Список предложений"/>
+        <activity android:name="kz.vozon.vozon.ui.client.OrderNewActivity"
+            android:label="Добавить заявку"/>
+        <activity android:name="kz.vozon.vozon.ui.client.TTypeActivity"
+            android:label="@string/t_type"/>
+        <activity android:name="kz.vozon.vozon.ui.client.active.XOrderADetailActivity" />
+        <activity android:name="kz.vozon.vozon.ui.client.route.RouteFilterActivity"
+            android:label="Найти"/>
+        <activity android:name="kz.vozon.vozon.ui.client.route.XRouteDetailActivity" />
+        <activity android:name="kz.vozon.vozon.ui.client.active.CourierProfileActivity"
+            android:label="@string/profile"/>
+        <activity android:name="kz.vozon.vozon.ui.client.XProfileEditActivity"
+            android:label="@string/profile_edit"/>
+
+
+        <activity
+            android:name="kz.vozon.vozon.ui.courier.YMainActivity"
+            android:theme="@style/AppThemeDark.NoActionBar" />
+        <activity
+            android:name="kz.vozon.vozon.ui.courier.transport.TransportNewActivity"
+            android:theme="@style/AppThemeDark"
+            android:label="@string/add_transport"/>
+        <activity
+            android:name="kz.vozon.vozon.ui.courier.transport.TransportDetailActivity"
+            android:theme="@style/AppThemeDark" />
+        <activity
+            android:name="kz.vozon.vozon.ui.courier.order.YOrderPDetailActivity"
+            android:theme="@style/AppThemeDark" />
+        <activity
+            android:name="kz.vozon.vozon.ui.courier.order.OfferNewActivity"
+            android:theme="@style/AppThemeDark" />
+        <activity
+            android:name="kz.vozon.vozon.ui.courier.transport.TransportListActivity"
+            android:theme="@style/AppThemeDark" />
+        <activity
+            android:name="kz.vozon.vozon.ui.courier.route.RouteNewActivity"
+            android:label="Дать объявление"
+            android:theme="@style/AppThemeDark" />
+        <activity
+            android:name="kz.vozon.vozon.ui.courier.route.YRouteDetailActivity"
+            android:theme="@style/AppThemeDark" />
+        <activity
+            android:name="kz.vozon.vozon.ui.courier.order.YOrderWDetailActivity"
+            android:theme="@style/AppThemeDark" />
+        <activity
+            android:name="kz.vozon.vozon.ui.courier.order.YOrderADetailActivity"
+            android:theme="@style/AppThemeDark" />
+
+        <activity android:name="kz.vozon.vozon.ui.courier.YProfileEditActivity"
+            android:label="@string/profile_edit"/>
+        <activity android:name="kz.vozon.vozon.ui.courier.YProfileEditNextActivity"
+            android:label="@string/profile_edit"/>
+        <activity android:name="kz.vozon.vozon.ui.courier.YSettingActivity"
+            android:theme="@style/AppThemeDark"
+            android:label="@string/settings"/>
+        <activity android:name="kz.vozon.vozon.ui.courier.order.OrderFilterActivity"
+            android:theme="@style/AppThemeDark"
+            android:label="Ищу груз" />
+
+
+        <service
+            android:name="kz.vozon.vozon.services.MyFirebaseInstanceIDService"
+            android:permission="android.permission.INTERNET">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

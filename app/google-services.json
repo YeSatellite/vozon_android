@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "340577631368",
+    "firebase_url": "https://vozon-8a06e.firebaseio.com",
+    "project_id": "vozon-8a06e",
+    "storage_bucket": "vozon-8a06e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340577631368:android:04b1ce2a3b429fd6",
+        "android_client_info": {
+          "package_name": "kz.vozon.vozon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340577631368-agjgae18svhnpk2jg2djeuireklhrmsl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kz.vozon.vozon",
+            "certificate_hash": "198ef88e7cffd5e1336931d863ed7631ff6733cb"
+          }
+        },
+        {
+          "client_id": "340577631368-eobcvv1fccg4ujlhf8i113q2q2ak5dd2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzkgqMLmC_YDyR8pcadoHJKLOX6spbTEI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340577631368-eobcvv1fccg4ujlhf8i113q2q2ak5dd2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

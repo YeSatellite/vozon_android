@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/v_images"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="?appBackground">
+
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/space">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Дата и время"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/v_date"
+                    style="@style/LargeTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="4dp"
+                    tools:text="14, Май • 13:30" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Дата и время"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/v_start_point"
+                    style="@style/LargeTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="4dp"
+                    tools:text="Павлодар, Каза*стан, Алтынсарина 67" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Отгрузка"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/v_end_point"
+                    style="@style/LargeTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="4dp"
+                    tools:text="Алматы, Каза*стан, Саина 65" />
+
+                <include
+                    layout="@layout/include_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="@dimen/space"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Направления"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/v_position"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textSize="17sp"
+                        android:theme="@style/LargeTextViewStyle"
+                        tools:text="Меж. город" />
+                </LinearLayout>
+
+                <LinearLayout                    android:layout_width="match_parent"                    android:layout_height="match_parent"                    android:layout_marginBottom="10dp"                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Категория"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/v_t_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text=" посылки"
+                        android:textSize="17sp"
+                        android:theme="@style/LargeTextViewStyle"
+                        tools:text="ПереVOZка" />
+                </LinearLayout>
+
+                <LinearLayout                    android:layout_width="match_parent"                    android:layout_height="match_parent"                    android:layout_marginBottom="10dp"                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Способ оплаты"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/v_transport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textSize="17sp"
+                        android:theme="@style/LargeTextViewStyle"
+                        tools:text="Наличный расчет" />
+                </LinearLayout>
+
+                <LinearLayout                    android:layout_width="match_parent"                    android:layout_height="match_parent"                    android:layout_marginBottom="10dp"                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/volume"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/v_volume"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textSize="17sp"
+                        android:theme="@style/LargeTextViewStyle"
+                        tools:text="0.000375 м^3" />
+                </LinearLayout>
+
+                <LinearLayout                    android:layout_width="match_parent"                    android:layout_height="match_parent"                    android:layout_marginBottom="10dp"                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Вес"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/v_mass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textSize="17sp"
+                        android:theme="@style/LargeTextViewStyle"
+                        tools:text="1 гр" />
+                </LinearLayout>
+
+                <LinearLayout                    android:layout_width="match_parent"                    android:layout_height="match_parent"                    android:layout_marginBottom="10dp"                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/v_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textSize="17sp"
+                        android:theme="@style/LargeTextViewStyle"
+                        tools:text="1 гр" />
+                </LinearLayout>
+
+                <include
+                    layout="@layout/include_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <TextView
+                    android:id="@+id/v_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space"
+                    android:textSize="17sp"
+                    android:theme="@style/LargeTextViewStyle"
+                    tools:text="Far far away, behind the word mountains, far from the countries Vokalia and Consanantia, there live the texts" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

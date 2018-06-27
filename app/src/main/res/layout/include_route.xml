@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@+id/c_include"
+        layout="@layout/include_arrow"
+        android:layout_width="10dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/space"
+        app:layout_constraintBottom_toBottomOf="@+id/v_end_point"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/c_1" />
+
+    <TextView
+        android:id="@+id/c_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Погрузка"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/c_include"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/v_start_point"
+        style="@style/LargeTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/c_1"
+        app:layout_constraintTop_toBottomOf="@+id/c_1"
+        tools:text="Павлодар, Казахстан" />
+
+    <TextView
+        android:id="@+id/c_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Отгрузка"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/v_start_point"
+        app:layout_constraintTop_toBottomOf="@+id/v_start_point" />
+
+    <TextView
+        android:id="@+id/v_end_point"
+        style="@style/LargeTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/c_2"
+        app:layout_constraintTop_toBottomOf="@+id/c_2"
+        tools:text="Алматы, Казахстан Polo" />
+
+
+</android.support.constraint.ConstraintLayout>

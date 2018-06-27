@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/editTextBackground"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/v_images"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="?appBackground">
+
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/space"
+            android:layout_marginStart="@dimen/space"
+            android:layout_marginTop="@dimen/space"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/v_image"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:padding="5dp"
+                tools:srcCompat="@drawable/tmp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/v_transport"
+                    style="@style/LargeTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@+id/c_image"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Volkswagen Polo" />
+
+                <TextView
+                    android:id="@+id/v_t_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    tools:text="Седан • Грузчики" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/v_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                tools:text="14, Май" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/space"
+            android:paddingStart="@dimen/space"
+            android:paddingTop="@dimen/space"
+            android:text="@string/transport_position"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/v_start_point"
+            style="@style/LargeTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="4dp"
+            android:paddingEnd="@dimen/space"
+            android:paddingStart="@dimen/space"
+            tools:text="Павлодар, Каза*стан, Алтынсарина 67" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/space"
+            android:paddingStart="@dimen/space"
+            android:text="@string/destination"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/v_end_point"
+            style="@style/LargeTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="4dp"
+            android:paddingEnd="@dimen/space"
+            android:paddingStart="@dimen/space"
+            android:text="@string/not_matter" />
+
+        <include
+            layout="@layout/include_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="@dimen/space"
+            android:layout_marginStart="@dimen/space" />
+
+        <TextView
+            android:id="@+id/v_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space"
+            android:textSize="17sp"
+            android:theme="@style/LargeTextViewStyle"
+            tools:text="Far far away, behind the word mountains, far from the countries Vokalia and Consanantia, there live the texts" />
+
+    </LinearLayout>
+</ScrollView>

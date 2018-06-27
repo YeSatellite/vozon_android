@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <CheckedTextView
+        android:id="@+id/v_transport"
+        android:textColor = "?textColorLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space"
+        android:gravity="center"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:textSize="20sp"
+        tools:text="Name" />
+
+    <include
+        layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</LinearLayout>

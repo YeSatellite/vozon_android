@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/editTextBackground"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/v_images"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="?appBackground">
+
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="@dimen/space">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="@dimen/space"
+                    android:paddingStart="@dimen/space"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/v_length"
+                        style="@style/LargeTextViewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        tools:text="3м" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Длина" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="@dimen/space"
+                    android:paddingStart="@dimen/space"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/v_width"
+                        style="@style/LargeTextViewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        tools:text="1м" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ширина" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="@dimen/space"
+                    android:paddingStart="@dimen/space"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/v_height"
+                        style="@style/LargeTextViewStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        tools:text="1.5м" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Высота" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/space"
+            android:paddingEnd="@dimen/space"
+            android:paddingStart="@dimen/space">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="@dimen/space"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Гос. номер"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/v_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textSize="17sp"
+                    android:theme="@style/LargeTextViewStyle"
+                    tools:text="Меж. город" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Марка"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/v_mark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textSize="17sp"
+                    android:theme="@style/LargeTextViewStyle"
+                    tools:text="ПереVOZка" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Модель"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/v_model"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textSize="17sp"
+                    android:theme="@style/LargeTextViewStyle"
+                    tools:text="Наличный расчет" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/t_type"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/v_t_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textSize="17sp"
+                    android:theme="@style/LargeTextViewStyle"
+                    tools:text="1 гр" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/load_type"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/v_load_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textSize="17sp"
+                    android:theme="@style/LargeTextViewStyle"
+                    tools:text="1 гр" />
+            </LinearLayout>
+
+            <include
+                layout="@layout/include_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/v_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space"
+                android:textSize="17sp"
+                android:theme="@style/LargeTextViewStyle"
+                tools:text="Far far away, behind the word mountains, far from the countries Vokalia and Consanantia, there live the texts" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:background="?appBackground"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+</ScrollView>

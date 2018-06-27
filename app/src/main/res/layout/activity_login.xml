@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.alimuzaffar.lib.pin.PinEntryEditText
+        android:id="@+id/v_pin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="200dp"
+        android:cursorVisible="false"
+        android:digits="1234567890"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:pinAnimationType="fromBottom"
+        app:pinBackgroundIsSquare="false"
+        app:pinLineColors="@color/appBlue"
+        app:pinLineStroke="2dp"
+        app:pinLineStrokeSelected="5dp"
+        app:pinTextBottomPadding="8dp" />
+
+</android.support.constraint.ConstraintLayout>

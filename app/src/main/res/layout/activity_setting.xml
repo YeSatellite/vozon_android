@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.client.XSettingActivity">
+
+    <TextView
+        android:id="@+id/v_edit"
+        style="@style/LargeTextViewStyle.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/edit_"
+        android:text="@string/profile_edit" />
+
+    <include
+        layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/space"
+        android:layout_marginStart="@dimen/space" />
+
+    <TextView
+        android:id="@+id/v_faq"
+        style="@style/LargeTextViewStyle.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/question_"
+        android:text="FAQ" />
+
+    <include
+        layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/space"
+        android:layout_marginStart="@dimen/space" />
+
+    <TextView
+        android:id="@+id/v_help"
+        style="@style/LargeTextViewStyle.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/support_"
+        android:text="Помощь" />
+
+    <include
+        layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/space"
+        android:layout_marginStart="@dimen/space" />
+
+    <TextView
+        android:id="@+id/v_connect"
+        style="@style/LargeTextViewStyle.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/letter_"
+        android:text="Связаться с нами" />
+
+    <include
+        layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/space"
+        android:layout_marginStart="@dimen/space" />
+
+    <TextView
+        android:id="@+id/v_remove_user"
+        style="@style/LargeTextViewStyle.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Удалить аккаунт"
+        android:textColor="@color/appRed" />
+
+    <include
+        layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/space"
+        android:layout_marginStart="@dimen/space" />
+
+    <TextView
+        android:id="@+id/v_logout"
+        style="@style/LargeTextViewStyle.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/appRed"
+        android:text="Выйти" />
+
+</LinearLayout>

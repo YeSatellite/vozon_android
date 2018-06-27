@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?appBackground"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/v_city_add"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/space"
+        android:background="?android:attr/editTextBackground"
+        android:text="+ Добавить город"
+        android:textSize="15sp"
+        android:theme="@style/LargeTextViewStyle" />
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.glider.vozon.ui.courier.order.YOrderPListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

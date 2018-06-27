@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="currency_s">
+        <item>₸</item>
+        <item>₽</item>
+        <item>$</item>
+        <item>⊆</item>
+    </string-array>
+    <string-array name="currency_n">
+        <item>Тенге</item>
+        <item>Рубль</item>
+        <item>Доллар</item>
+        <item>Сом</item>
+    </string-array>
+</resources>

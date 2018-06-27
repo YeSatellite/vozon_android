@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?appBackground"
+    tools:context=".ui.auth.XSignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/space">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="40dp"
+                android:background="?editTextBackground"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ProfileEditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/photo" />
+
+                <ImageView
+                    android:id="@+id/v_image1"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/add_image" />
+
+                <ImageView
+                    android:id="@+id/v_image2"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/add_image" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/v_title"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title"
+                android:inputType="textPersonName" />
+
+            <include
+                layout="@layout/include_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <EditText
+                android:id="@+id/v_comment"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="@string/enter_cargo"
+                android:inputType="textMultiLine"
+                android:minLines="4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingEnd="@dimen/space"
+                android:paddingStart="@dimen/space"
+                android:paddingTop="@dimen/space"
+                android:text="ГАБАРИТЫ"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/v_length"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/length_u"
+                android:inputType="numberDecimal" />
+
+            <include
+                layout="@layout/include_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <EditText
+                android:id="@+id/v_width"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/width_u"
+                android:inputType="numberDecimal" />
+
+            <include
+                layout="@layout/include_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <EditText
+                android:id="@+id/v_height"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/height_u"
+                android:inputType="numberDecimal" />
+
+            <include
+                layout="@layout/include_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <EditText
+                android:id="@+id/v_mass"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:hint="@string/weight_u"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/v_start_point"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/next_"
+                android:focusable="false"
+                android:hint="@string/loading"
+                android:inputType="text" />
+
+            <include
+                layout="@layout/include_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <EditText
+                android:id="@+id/v_end_point"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/next_"
+                android:focusable="false"
+                android:hint="Отгрузка"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingEnd="@dimen/space"
+                android:paddingStart="@dimen/space"
+                android:paddingTop="@dimen/space"
+                android:text="ДАТА"
+                android:textSize="12sp" />
+
+            <include
+                layout="@layout/include_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <EditText
+                android:id="@+id/v_shipping_date"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="Дата"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/v_shipping_time"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="Время"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingEnd="@dimen/space"
+                android:paddingStart="@dimen/space"
+                android:paddingTop="@dimen/space"
+                android:text="@string/receiver_info"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/v_accept_person"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ФИО"
+                android:inputType="textPersonName" />
+
+            <include
+                layout="@layout/include_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <EditText
+                android:id="@+id/v_accept_person_contact"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Контакты"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingEnd="@dimen/space"
+                android:paddingStart="@dimen/space"
+                android:paddingTop="@dimen/space"
+                android:textAllCaps="true"
+                android:text="@string/price"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:windowBackground"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/v_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+                <include
+                    layout="@layout/include_line"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:id="@+id/v_price"
+                    style="@style/ProfileEditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/price_for_service"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingEnd="@dimen/space"
+                android:paddingStart="@dimen/space"
+                android:paddingTop="@dimen/space"
+                android:text="СПОСОБ ОПЛАТЫ"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/v_transport"
+                style="@style/ProfileEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/next_"
+                android:focusable="false"
+                android:hint="Выберите способ оплаты"
+                android:inputType="text" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
