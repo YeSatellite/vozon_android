@@ -2,14 +2,11 @@ package kz.vozon.vozon.ui.client.active
 
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
-import kz.vozon.vozon.R
-import kz.vozon.vozon.models.Order
-import kz.vozon.vozon.ui.BackPressCompatActivity
-import kz.vozon.vozon.ui.ImagePagerAdapter
-import kotlinx.android.synthetic.main.activity_order_a_detail.*
 import android.view.View
-import kz.vozon.vozon.utility.*
+import kotlinx.android.synthetic.main.activity_order_a_detail.*
 import kotlinx.android.synthetic.main.item_rating.view.*
+import kz.vozon.vozon.R
+import kz.vozon.vozon.utility.*
 
 
 class XOrderADetailActivity : kz.vozon.vozon.ui.BackPressCompatActivity() {

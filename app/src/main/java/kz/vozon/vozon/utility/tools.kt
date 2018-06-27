@@ -14,7 +14,6 @@ import android.provider.MediaStore
 import android.support.design.widget.Snackbar
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
-import android.support.v4.widget.SwipeRefreshLayout
 import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
@@ -26,16 +25,11 @@ import android.widget.TextView
 import android.widget.Toast
 import com.squareup.picasso.Picasso
 import kz.vozon.vozon.R
-import kz.vozon.vozon.models.Location
-import kz.vozon.vozon.models.User
-import kz.vozon.vozon.ui.client.XMainActivity
-import kz.vozon.vozon.ui.courier.YMainActivity
-import kotlinx.android.synthetic.main.item_offer.view.*
+import java.io.File
+import java.io.FileOutputStream
 import java.io.Serializable
 import java.text.SimpleDateFormat
 import java.util.*
-import java.io.File
-import java.io.FileOutputStream
 
 
 /*

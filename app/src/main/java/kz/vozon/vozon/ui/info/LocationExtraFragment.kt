@@ -5,12 +5,10 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.view.*
+import kotlinx.android.synthetic.main.fragment_location_extra.view.*
 import kz.vozon.vozon.R
 import kz.vozon.vozon.utility.get
 import kz.vozon.vozon.utility.snack
-import kotlinx.android.synthetic.main.fragment_location_extra.view.*
-import android.view.LayoutInflater
-
 
 
 class LocationExtraFragment : Fragment() {

@@ -1,10 +1,10 @@
 package kz.vozon.vozon.ui.auth
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import kz.vozon.vozon.R
+import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_sign_up.*
+import kz.vozon.vozon.R
 
 class SignUpActivity : AppCompatActivity() {
 

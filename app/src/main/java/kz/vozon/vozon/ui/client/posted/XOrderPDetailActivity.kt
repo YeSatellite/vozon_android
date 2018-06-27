@@ -5,12 +5,9 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import kz.vozon.vozon.R
-import kz.vozon.vozon.models.Order
-import kz.vozon.vozon.ui.BackPressCompatActivity
-import kz.vozon.vozon.ui.ImagePagerAdapter
-import kz.vozon.vozon.utility.*
 import kotlinx.android.synthetic.main.activity_order_posted_detail.*
+import kz.vozon.vozon.R
+import kz.vozon.vozon.utility.*
 
 
 class XOrderPDetailActivity : kz.vozon.vozon.ui.BackPressCompatActivity() {

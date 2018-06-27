@@ -4,11 +4,14 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.view.*
-import kz.vozon.vozon.R
-import kz.vozon.vozon.ui.client.XSettingActivity
-import kz.vozon.vozon.utility.*
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import kotlinx.android.synthetic.main.fragment_courier_profile.view.*
+import kz.vozon.vozon.R
+import kz.vozon.vozon.utility.Shared
+import kz.vozon.vozon.utility.addFilter
+import kz.vozon.vozon.utility.src
 
 class YProfileFragment : Fragment() {
 

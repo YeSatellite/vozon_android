@@ -3,7 +3,6 @@ package kz.vozon.vozon.utility
 import android.app.Activity
 import android.content.SharedPreferences
 import kz.vozon.vozon.R
-import kz.vozon.vozon.models.*
 import retrofit2.Call
 
 object Shared {

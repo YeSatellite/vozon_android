@@ -6,13 +6,9 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import com.theartofdev.edmodo.cropper.CropImage
-import kz.vozon.vozon.R
-import kz.vozon.vozon.models.InfoTmp
-import kz.vozon.vozon.models.Transport
-import kz.vozon.vozon.ui.BackPressCompatActivity
-import kz.vozon.vozon.ui.info.InfoTmpActivity
-import kz.vozon.vozon.utility.*
 import kotlinx.android.synthetic.main.activity_transport_new.*
+import kz.vozon.vozon.R
+import kz.vozon.vozon.utility.*
 import java.io.File
 
 class TransportNewActivity : kz.vozon.vozon.ui.BackPressCompatActivity() {

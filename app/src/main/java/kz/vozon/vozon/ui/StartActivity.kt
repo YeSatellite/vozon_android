@@ -5,8 +5,6 @@ import android.os.Bundle
 import android.preference.PreferenceManager
 import android.support.v7.app.AppCompatActivity
 import kz.vozon.vozon.R
-import kz.vozon.vozon.models.User
-import kz.vozon.vozon.ui.auth.SendSmsActivity
 import kz.vozon.vozon.utility.Api
 import kz.vozon.vozon.utility.Shared
 import kz.vozon.vozon.utility.norm

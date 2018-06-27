@@ -8,9 +8,9 @@ import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kz.vozon.vozon.R
 import kotlinx.android.synthetic.main.fragment_list.view.*
 import kotlinx.android.synthetic.main.fragment_list_toolbar.view.*
+import kz.vozon.vozon.R
 
 abstract class ListToolbarFragment<T,V : kz.vozon.vozon.ui.ListFragment.ViewHolder> : kz.vozon.vozon.ui.ListFragment<T, V>() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,

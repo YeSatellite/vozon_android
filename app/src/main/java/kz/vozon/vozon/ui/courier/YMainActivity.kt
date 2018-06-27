@@ -2,13 +2,9 @@ package kz.vozon.vozon.ui.courier
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import kz.vozon.vozon.ui.courier.transport.TransportListFragment
-import kz.vozon.vozon.R
-import kz.vozon.vozon.ui.courier.order.YOrderFragment
-import kz.vozon.vozon.ui.courier.route.YRouteListFragment
-import kz.vozon.vozon.utility.Shared
-import kz.vozon.vozon.utility.norm
 import kotlinx.android.synthetic.main.activity_courier_main.*
+import kz.vozon.vozon.R
+import kz.vozon.vozon.utility.Shared
 
 class YMainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -2,16 +2,12 @@ package kz.vozon.vozon.ui.courier
 
 import android.app.Activity
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import kotlinx.android.synthetic.main.activity_client_signup_next.*
 import kz.vozon.vozon.R
 import kz.vozon.vozon.models.User
-import kz.vozon.vozon.ui.BackPressCompatActivity
 import kz.vozon.vozon.utility.*
-import kotlinx.android.synthetic.main.activity_client_signup_next.*
-import okhttp3.MediaType
-import okhttp3.RequestBody
 import java.io.File
 
 

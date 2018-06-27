@@ -1,14 +1,14 @@
 package kz.vozon.vozon.ui
 
 import android.content.Context
-import android.widget.LinearLayout
-import android.view.ViewGroup
-import android.view.LayoutInflater
 import android.support.v4.view.PagerAdapter
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
+import android.widget.LinearLayout
+import kotlinx.android.synthetic.main.item_image_pager.view.*
 import kz.vozon.vozon.R
 import kz.vozon.vozon.utility.src
-import kotlinx.android.synthetic.main.item_image_pager.view.*
 
 
 internal class ImagePagerAdapter(

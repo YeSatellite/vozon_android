@@ -1,23 +1,13 @@
 package kz.vozon.vozon.ui.courier.route
 
 import android.app.Activity
-import android.app.DatePickerDialog
-import android.app.TimePickerDialog
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import kz.vozon.vozon.R
-import kz.vozon.vozon.models.Location
-import kz.vozon.vozon.models.Route
-import kz.vozon.vozon.models.Transport
-import kz.vozon.vozon.ui.BackPressCompatActivity
-import kz.vozon.vozon.ui.courier.transport.TransportListActivity
-import kz.vozon.vozon.ui.info.LocationActivity
-import kz.vozon.vozon.utility.*
 import kotlinx.android.synthetic.main.activity_route_new.*
-import java.util.*
+import kz.vozon.vozon.R
+import kz.vozon.vozon.utility.*
 
 class RouteNewActivity : kz.vozon.vozon.ui.BackPressCompatActivity() {
 

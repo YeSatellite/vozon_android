@@ -97,15 +97,7 @@
         <item name="android:paddingStart">@dimen/space</item>
         <item name="android:paddingEnd">@dimen/space</item>
     </style>
-    <style name="RadioGroupStyle">
-        <item name="android:textColor">?textColorLarge</item>
-        <item name="android:drawablePadding">@dimen/space</item>
-        <item name="android:gravity">center</item>
-        <item name="android:paddingTop">15dp</item>
-        <item name="android:paddingBottom">15dp</item>
-        <item name="android:paddingStart">@dimen/space</item>
-        <item name="android:paddingEnd">@dimen/space</item>
-    </style>
+
     <style name="RadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
         <item name="android:textColor">@drawable/radio_text_color</item>
         <item name="android:layout_weight">1</item>
@@ -116,13 +108,6 @@
         <item name="android:paddingStart">@dimen/space</item>
         <item name="android:paddingEnd">@dimen/space</item>
         <item name="android:textSize">15sp</item>
-    </style>
-    <style name="PagerSlidingTabStrip">
-        <item name="android:textColor">@android:color/white</item>
-    </style>
-
-    <style name="MyRatingBar" parent="Widget.AppCompat.RatingBar">
-        <item name="colorAccent">@color/appBlue</item>
     </style>
 
     <style name="TabTextAppearance">

@@ -11,13 +11,13 @@
         android:layout_height="40dp"
         android:layout_marginTop="@dimen/space"
         android:background="?android:attr/editTextBackground"
-        android:text="+ Добавить город"
+        android:text="@string/_add_city"
         android:textSize="15sp"
         android:theme="@style/LargeTextViewStyle" />
 
     <fragment
         android:id="@+id/fragment"
-        android:name="com.glider.vozon.ui.courier.order.YOrderPListFragment"
+        android:name="kz.vozon.vozon.ui.courier.order.YOrderPListFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

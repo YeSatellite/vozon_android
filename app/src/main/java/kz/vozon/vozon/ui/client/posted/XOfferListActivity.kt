@@ -4,19 +4,12 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.widget.SwipeRefreshLayout
-import android.support.v7.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kz.vozon.vozon.R
-import kz.vozon.vozon.ui.ListFragment
-import kz.vozon.vozon.models.Offer
-import kz.vozon.vozon.models.Order
-import kz.vozon.vozon.ui.BackPressCompatActivity
-import kz.vozon.vozon.ui.client.active.CourierProfileActivity
-import kz.vozon.vozon.ui.courier.transport.TransportDetailActivity
-import kz.vozon.vozon.utility.*
 import kotlinx.android.synthetic.main.item_offer.view.*
+import kz.vozon.vozon.R
+import kz.vozon.vozon.utility.*
 
 class XOfferListActivity : kz.vozon.vozon.ui.BackPressCompatActivity() {
 

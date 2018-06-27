@@ -1,10 +1,10 @@
 package kz.vozon.vozon.ui.info
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_terms.*
 import kz.vozon.vozon.R
 import kz.vozon.vozon.utility.addBackPress
-import kotlinx.android.synthetic.main.activity_terms.*
 
 class TermsActivity : AppCompatActivity() {
 

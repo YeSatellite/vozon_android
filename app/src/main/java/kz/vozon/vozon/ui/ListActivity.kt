@@ -3,13 +3,12 @@ package kz.vozon.vozon.ui
 import android.graphics.Color
 import android.os.Bundle
 import android.support.v4.widget.SwipeRefreshLayout
-import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
+import kotlinx.android.synthetic.main.fragment_list.*
 import kz.vozon.vozon.R
 import kz.vozon.vozon.utility.Shared
-import kotlinx.android.synthetic.main.fragment_list.*
 
 abstract class ListActivity<T,V : kz.vozon.vozon.ui.ListFragment.ViewHolder>: kz.vozon.vozon.ui.BackPressCompatActivity() {
     var refresh: Runnable? = null

@@ -6,13 +6,10 @@ import android.content.pm.PackageManager
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
+import kotlinx.android.synthetic.main.activity_y_order_a_detail.*
 import kz.vozon.vozon.R
-import kz.vozon.vozon.models.Order
-import kz.vozon.vozon.ui.ImagePagerAdapter
-import kz.vozon.vozon.ui.client.route.XRouteDetailActivity
 import kz.vozon.vozon.ui.client.route.XRouteDetailActivity.Companion.REQUEST_PHONE_CALL
 import kz.vozon.vozon.utility.*
-import kotlinx.android.synthetic.main.activity_y_order_a_detail.*
 
 
 class YOrderADetailActivity : AppCompatActivity() {

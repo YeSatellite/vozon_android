@@ -8,8 +8,8 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kz.vozon.vozon.R
 import kotlinx.android.synthetic.main.fragment_list.view.*
+import kz.vozon.vozon.R
 
 abstract class ListFragment<T,V : ListFragment.ViewHolder> : Fragment() {
     var refresh: Runnable? = null

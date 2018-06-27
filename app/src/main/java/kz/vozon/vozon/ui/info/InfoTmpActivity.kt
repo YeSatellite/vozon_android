@@ -8,15 +8,12 @@ import android.view.LayoutInflater
 import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
+import kotlinx.android.synthetic.main.item_info_tmp.view.*
 import kz.vozon.vozon.R
-import kz.vozon.vozon.models.InfoTmp
-import kz.vozon.vozon.ui.ListActivity
-import kz.vozon.vozon.ui.ListFragment
 import kz.vozon.vozon.utility.Shared
 import kz.vozon.vozon.utility.put
 import kz.vozon.vozon.utility.run2
 import kz.vozon.vozon.utility.snack
-import kotlinx.android.synthetic.main.item_info_tmp.view.*
 
 
 class InfoTmpActivity: kz.vozon.vozon.ui.ListActivity<kz.vozon.vozon.models.InfoTmp, InfoTmpActivity.ViewHolder>(){

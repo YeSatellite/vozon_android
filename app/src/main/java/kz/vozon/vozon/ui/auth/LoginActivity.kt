@@ -2,11 +2,9 @@ package kz.vozon.vozon.ui.auth
 
 import android.content.Intent
 import android.os.Bundle
-import kz.vozon.vozon.R
-import kz.vozon.vozon.services.MyFirebaseInstanceIDService
-import kz.vozon.vozon.ui.BackPressCompatActivity
-import kz.vozon.vozon.utility.*
 import kotlinx.android.synthetic.main.activity_login.*
+import kz.vozon.vozon.R
+import kz.vozon.vozon.utility.*
 
 
 class LoginActivity : kz.vozon.vozon.ui.BackPressCompatActivity() {

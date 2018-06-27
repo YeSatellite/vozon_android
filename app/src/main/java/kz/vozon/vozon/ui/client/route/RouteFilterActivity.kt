@@ -4,19 +4,12 @@ import android.app.Activity
 import android.app.DatePickerDialog
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import kz.vozon.vozon.R
-import kz.vozon.vozon.models.InfoTmp
-import kz.vozon.vozon.models.Location
-import kz.vozon.vozon.models.Route
-import kz.vozon.vozon.ui.BackPressCompatActivity
-import kz.vozon.vozon.ui.info.InfoTmpActivity
-import kz.vozon.vozon.ui.info.LocationActivity
-import kz.vozon.vozon.ui.info.MultiInfoActivity
-import kz.vozon.vozon.utility.*
 import kotlinx.android.synthetic.main.activity_route_filter.*
+import kz.vozon.vozon.R
+import kz.vozon.vozon.ui.info.LocationActivity
+import kz.vozon.vozon.utility.*
 import java.util.*
 
 class RouteFilterActivity: kz.vozon.vozon.ui.BackPressCompatActivity() {

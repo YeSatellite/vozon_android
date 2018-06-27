@@ -6,12 +6,12 @@ import android.support.v4.widget.SwipeRefreshLayout
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kz.vozon.vozon.ui.ListFragment
-import kz.vozon.vozon.R
-import kz.vozon.vozon.models.Transport
-import kz.vozon.vozon.ui.ListActivity
-import kz.vozon.vozon.utility.*
 import kotlinx.android.synthetic.main.item_transport.view.*
+import kz.vozon.vozon.R
+import kz.vozon.vozon.utility.Api
+import kz.vozon.vozon.utility.put
+import kz.vozon.vozon.utility.run2
+import kz.vozon.vozon.utility.snack
 
 
 class TransportListActivity: kz.vozon.vozon.ui.ListActivity<kz.vozon.vozon.models.Transport, TransportListActivity.ViewHolder>() {

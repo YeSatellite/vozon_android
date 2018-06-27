@@ -11,15 +11,11 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.TextView
 import com.theartofdev.edmodo.cropper.CropImage
+import kotlinx.android.synthetic.main.activity_order_new.*
 import kz.vozon.vozon.R
-import kz.vozon.vozon.models.*
-import kz.vozon.vozon.ui.BackPressCompatActivity
-import kz.vozon.vozon.ui.CodeAdapter
-import kz.vozon.vozon.ui.info.InfoTmpActivity
 import kz.vozon.vozon.ui.info.LocationActivity
 import kz.vozon.vozon.utility.*
 import kz.vozon.vozon.utility.Shared.currencies
-import kotlinx.android.synthetic.main.activity_order_new.*
 import java.io.File
 
 

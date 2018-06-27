@@ -8,10 +8,10 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import kotlinx.android.synthetic.main.fragment_client_profile.view.*
 import kz.vozon.vozon.R
 import kz.vozon.vozon.utility.Shared
 import kz.vozon.vozon.utility.src
-import kotlinx.android.synthetic.main.fragment_client_profile.view.*
 
 class XProfileFragment : Fragment() {
     var v: View? = null

@@ -6,11 +6,9 @@ import android.support.v4.widget.SwipeRefreshLayout
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kz.vozon.vozon.R
-import kz.vozon.vozon.models.Order
-import kz.vozon.vozon.ui.ListFragment
-import kz.vozon.vozon.utility.*
 import kotlinx.android.synthetic.main.item_courier_order.view.*
+import kz.vozon.vozon.R
+import kz.vozon.vozon.utility.*
 
 
 class YOrderAListFragment : kz.vozon.vozon.ui.ListFragment<kz.vozon.vozon.models.Order, YOrderAListFragment.ViewHolder>() {

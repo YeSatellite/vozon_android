@@ -2,12 +2,11 @@ package kz.vozon.vozon.ui.client
 
 import android.app.Activity
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import kz.vozon.vozon.R
-import kz.vozon.vozon.models.User
-import kz.vozon.vozon.utility.*
+import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_setting.*
+import kz.vozon.vozon.R
+import kz.vozon.vozon.utility.*
 
 class XSettingActivity : AppCompatActivity() {
 

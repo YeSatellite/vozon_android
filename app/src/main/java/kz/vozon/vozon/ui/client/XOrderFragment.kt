@@ -3,17 +3,13 @@ package kz.vozon.vozon.ui.client
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
 import android.support.v7.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kz.vozon.vozon.R
-import kz.vozon.vozon.ui.client.active.XOrderAListFragment
-import kz.vozon.vozon.ui.client.posted.XOrderPListFragment
-import kz.vozon.vozon.utility.Shared
 import kotlinx.android.synthetic.main.tmp_pager.view.*
+import kz.vozon.vozon.R
 
 class XOrderFragment : Fragment() {
 

@@ -7,7 +7,6 @@ import android.app.ProgressDialog
 import android.os.Handler
 import android.support.v4.widget.SwipeRefreshLayout
 import com.google.gson.GsonBuilder
-import kz.vozon.vozon.models.*
 import okhttp3.MediaType
 import okhttp3.MultipartBody
 import okhttp3.OkHttpClient

@@ -2,13 +2,11 @@ package kz.vozon.vozon.ui.client.route
 
 import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import kz.vozon.vozon.R
-import kz.vozon.vozon.models.Route
-import kz.vozon.vozon.ui.ImagePagerAdapter
 import kotlinx.android.synthetic.main.activity_x_route_detail.*
-import android.content.pm.PackageManager
+import kz.vozon.vozon.R
 import kz.vozon.vozon.utility.*
 
 

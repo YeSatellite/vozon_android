@@ -5,11 +5,9 @@ import android.content.Context
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import kz.vozon.vozon.R
-import kz.vozon.vozon.models.Country
-import kz.vozon.vozon.utility.Shared
 import kotlinx.android.synthetic.main.item_code_selected.view.*
 import kotlinx.android.synthetic.main.item_info_tmp.view.*
+import kz.vozon.vozon.R
 
 class CodeAdapter(val context: Context, val list: List<kz.vozon.vozon.models.Country>): BaseAdapter(){
     @SuppressLint("ViewHolder")

@@ -4,11 +4,12 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
-import kz.vozon.vozon.R
-import kz.vozon.vozon.models.Order
-import kz.vozon.vozon.ui.ImagePagerAdapter
-import kz.vozon.vozon.utility.*
 import kotlinx.android.synthetic.main.activity_y_order_p_detail.*
+import kz.vozon.vozon.R
+import kz.vozon.vozon.utility.addBackPress
+import kz.vozon.vozon.utility.dateFormat
+import kz.vozon.vozon.utility.get
+import kz.vozon.vozon.utility.src
 
 
 class YOrderWDetailActivity : AppCompatActivity() {

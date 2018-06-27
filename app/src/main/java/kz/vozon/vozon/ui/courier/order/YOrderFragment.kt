@@ -9,9 +9,9 @@ import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import kotlinx.android.synthetic.main.tmp_pager.view.*
 import kz.vozon.vozon.R
 import kz.vozon.vozon.utility.Shared
-import kotlinx.android.synthetic.main.tmp_pager.view.*
 
 
 class YOrderFragment : Fragment() {

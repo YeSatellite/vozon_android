@@ -5,7 +5,6 @@ import android.net.Uri
 import android.os.Parcel
 import com.google.gson.Gson
 import com.google.gson.annotations.Expose
-import kz.vozon.vozon.R.string.type
 import java.io.Serializable
 import java.math.RoundingMode
 import java.text.DecimalFormat

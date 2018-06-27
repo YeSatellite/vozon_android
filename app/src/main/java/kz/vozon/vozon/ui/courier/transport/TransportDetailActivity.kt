@@ -4,12 +4,9 @@ import android.app.Activity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import kz.vozon.vozon.R
-import kz.vozon.vozon.models.Transport
-import kz.vozon.vozon.ui.BackPressCompatActivity
-import kz.vozon.vozon.ui.ImagePagerAdapter
-import kz.vozon.vozon.utility.*
 import kotlinx.android.synthetic.main.activity_transport_detail.*
+import kz.vozon.vozon.R
+import kz.vozon.vozon.utility.*
 
 
 class TransportDetailActivity : kz.vozon.vozon.ui.BackPressCompatActivity() {

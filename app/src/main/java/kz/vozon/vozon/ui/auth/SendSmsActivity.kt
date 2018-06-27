@@ -6,12 +6,9 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.AdapterView
 import com.redmadrobot.inputmask.MaskedTextChangedListener
-import kz.vozon.vozon.R
-import kz.vozon.vozon.models.Country
-import kz.vozon.vozon.ui.CodeAdapter
-import kz.vozon.vozon.ui.info.TermsActivity
-import kz.vozon.vozon.utility.*
 import kotlinx.android.synthetic.main.activity_send_sms.*
+import kz.vozon.vozon.R
+import kz.vozon.vozon.utility.*
 
 
 class SendSmsActivity : AppCompatActivity() {

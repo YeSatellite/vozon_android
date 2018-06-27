@@ -1,19 +1,16 @@
 package kz.vozon.vozon.ui.info
 
 import android.app.Activity
-import android.content.Intent
 import android.os.Bundle
-import android.support.v4.view.MenuItemCompat
-import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.SearchView
 import android.view.*
-import kz.vozon.vozon.R
-import kz.vozon.vozon.models.MultiInfo
-import kz.vozon.vozon.ui.BackPressCompatActivity
-import kz.vozon.vozon.utility.*
 import kotlinx.android.synthetic.main.fragment_list.*
 import kotlinx.android.synthetic.main.item_multi_info.view.*
+import kz.vozon.vozon.R
+import kz.vozon.vozon.utility.Shared
+import kz.vozon.vozon.utility.run2
+import kz.vozon.vozon.utility.snack
 
 class MultiInfoActivity: kz.vozon.vozon.ui.BackPressCompatActivity() {
     var adapter: ListAdapter? = null

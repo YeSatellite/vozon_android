@@ -4,23 +4,14 @@ import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.AdapterView
+import kotlinx.android.synthetic.main.activity_offer_new.*
 import kz.vozon.vozon.R
-import kz.vozon.vozon.models.InfoTmp
-import kz.vozon.vozon.models.Offer
-import kz.vozon.vozon.models.Order
-import kz.vozon.vozon.models.Transport
-import kz.vozon.vozon.ui.BackPressCompatActivity
-import kz.vozon.vozon.ui.CodeAdapter
-import kz.vozon.vozon.ui.courier.transport.TransportListActivity
-import kz.vozon.vozon.ui.info.InfoTmpActivity
 import kz.vozon.vozon.utility.*
 import kz.vozon.vozon.utility.Shared.currencies
-import kotlinx.android.synthetic.main.activity_offer_new.*
 
 
 class OfferNewActivity : kz.vozon.vozon.ui.BackPressCompatActivity() {
@@ -39,7 +30,7 @@ class OfferNewActivity : kz.vozon.vozon.ui.BackPressCompatActivity() {
         setContentView(R.layout.activity_offer_new)
 
         order = intent.get(kz.vozon.vozon.models.Order::class.java)
-        v_date.text = "Предложение актуально до ${order.shippingDate?.dateFormat()}"
+        v_date.text = getString(R.string.till_time,order.shippingDate?.dateFormat())
 
         v_transport.setOnClickListener{
             val i = Intent(this@OfferNewActivity, kz.vozon.vozon.ui.courier.transport.TransportListActivity::class.java)

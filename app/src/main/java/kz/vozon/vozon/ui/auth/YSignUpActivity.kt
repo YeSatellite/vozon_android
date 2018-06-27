@@ -10,15 +10,11 @@ import android.view.View
 import android.widget.AdapterView
 import com.redmadrobot.inputmask.MaskedTextChangedListener
 import com.theartofdev.edmodo.cropper.CropImage
-import kz.vozon.vozon.*
-import kz.vozon.vozon.models.Country
-import kz.vozon.vozon.models.Location
-import kz.vozon.vozon.models.User
-import kz.vozon.vozon.ui.CodeAdapter
-import kz.vozon.vozon.ui.info.LocationActivity
-import kz.vozon.vozon.utility.*
 import kotlinx.android.synthetic.main.activity_client_signup.*
 import kotlinx.android.synthetic.main.include_sign_up_main.*
+import kz.vozon.vozon.R
+import kz.vozon.vozon.ui.info.LocationActivity
+import kz.vozon.vozon.utility.*
 import java.io.File
 
 

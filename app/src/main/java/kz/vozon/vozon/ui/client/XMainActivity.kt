@@ -2,10 +2,9 @@ package kz.vozon.vozon.ui.client
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import kz.vozon.vozon.R
-import kz.vozon.vozon.ui.client.route.XRouteListFragment
-import kz.vozon.vozon.utility.Shared
 import kotlinx.android.synthetic.main.activity_client_main.*
+import kz.vozon.vozon.R
+import kz.vozon.vozon.utility.Shared
 
 class XMainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

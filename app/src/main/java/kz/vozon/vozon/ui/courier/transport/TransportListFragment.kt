@@ -5,13 +5,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v4.widget.SwipeRefreshLayout
 import android.view.*
-import kz.vozon.vozon.R
-import kz.vozon.vozon.models.Transport
-import kz.vozon.vozon.ui.ListFragment
-import kz.vozon.vozon.ui.ListToolbarFragment
-import kz.vozon.vozon.utility.*
 import kotlinx.android.synthetic.main.fragment_list_toolbar.view.*
 import kotlinx.android.synthetic.main.item_transport.view.*
+import kz.vozon.vozon.R
+import kz.vozon.vozon.utility.*
 
 
 class TransportListFragment : kz.vozon.vozon.ui.ListToolbarFragment<kz.vozon.vozon.models.Transport, TransportListFragment.ViewHolder>() {

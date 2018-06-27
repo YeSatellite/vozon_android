@@ -7,13 +7,11 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import com.theartofdev.edmodo.cropper.CropImage
-import kz.vozon.vozon.R
-import kz.vozon.vozon.models.Location
-import kz.vozon.vozon.ui.BackPressCompatActivity
-import kz.vozon.vozon.ui.info.LocationActivity
-import kz.vozon.vozon.utility.*
 import kotlinx.android.synthetic.main.activity_client_signup.*
 import kotlinx.android.synthetic.main.include_sign_up_main.*
+import kz.vozon.vozon.R
+import kz.vozon.vozon.ui.info.LocationActivity
+import kz.vozon.vozon.utility.*
 import java.io.File
 
 

@@ -2,19 +2,15 @@ package kz.vozon.vozon.ui.info
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.support.v4.view.MenuItemCompat
 import android.support.v4.widget.SwipeRefreshLayout
 import android.support.v7.widget.SearchView
 import android.view.*
-import kz.vozon.vozon.ui.ListFragment
-import kz.vozon.vozon.R
-import kz.vozon.vozon.models.Location
-import kz.vozon.vozon.utility.run2
-import kz.vozon.vozon.utility.put
-import kz.vozon.vozon.utility.snack
 import kotlinx.android.synthetic.main.item_info_tmp.view.*
+import kz.vozon.vozon.R
+import kz.vozon.vozon.utility.put
+import kz.vozon.vozon.utility.run2
+import kz.vozon.vozon.utility.snack
 import retrofit2.Call
-
 
 
 @SuppressLint("ValidFragment")

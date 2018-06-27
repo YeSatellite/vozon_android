@@ -4,14 +4,11 @@ import android.app.Activity
 import android.content.Intent
 import android.support.v4.widget.SwipeRefreshLayout
 import android.view.*
+import kotlinx.android.synthetic.main.item_info_tmp_r.view.*
 import kz.vozon.vozon.R
-import kz.vozon.vozon.models.Location
-import kz.vozon.vozon.ui.ListActivity
-import kz.vozon.vozon.ui.ListFragment
 import kz.vozon.vozon.ui.info.LocationActivity
 import kz.vozon.vozon.utility.Shared
 import kz.vozon.vozon.utility.get
-import kotlinx.android.synthetic.main.item_info_tmp_r.view.*
 
 
 class OrderFilterActivity: kz.vozon.vozon.ui.ListActivity<kz.vozon.vozon.models.Location, OrderFilterActivity.ViewHolder>(){
