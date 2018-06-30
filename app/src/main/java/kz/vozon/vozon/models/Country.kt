@@ -5,16 +5,12 @@ import com.google.gson.annotations.SerializedName
 
 import java.io.Serializable
 
-class Country() : Serializable {
+class Country() : InfoTmp() {
 
     constructor(name: String,phoneCode: String) : this() {
         this.name = name
         this.phoneCode = phoneCode
     }
-
-    @Expose var id: Long? = null
-
-    @Expose var name: String? = null
 
     @SerializedName("phone_code")
     @Expose var phoneCode: String? = null

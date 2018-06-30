@@ -6,23 +6,25 @@ import android.support.v4.widget.SwipeRefreshLayout
 import android.view.*
 import kotlinx.android.synthetic.main.item_info_tmp_r.view.*
 import kz.vozon.vozon.R
-import kz.vozon.vozon.ui.info.LocationActivity
+import kz.vozon.vozon.models.InfoTmp
+import kz.vozon.vozon.ui.info.FilterLocationActivity
 import kz.vozon.vozon.utility.Shared
 import kz.vozon.vozon.utility.get
+import kz.vozon.vozon.utility.norm
 
 
-class OrderFilterActivity: kz.vozon.vozon.ui.ListActivity<kz.vozon.vozon.models.Location, OrderFilterActivity.ViewHolder>(){
+class OrderFilterActivity: kz.vozon.vozon.ui.ListActivity<InfoTmp, OrderFilterActivity.ViewHolder>(){
 
     companion object {
         const val CITY_REQUEST_CODE = 85
     }
 
 
-    var adapter: kz.vozon.vozon.ui.ListActivity<kz.vozon.vozon.models.Location, OrderFilterActivity.ViewHolder>.ListAdapter? = null
+    var adapter: kz.vozon.vozon.ui.ListActivity<InfoTmp, OrderFilterActivity.ViewHolder>.ListAdapter? = null
 
     override fun refreshListener(adapter: ListAdapter, srRefresh: SwipeRefreshLayout) {
         this.adapter = adapter
-        adapter.list = Shared.filter
+        adapter.list = Shared.Filter.list()
         adapter.notifyDataSetChanged()
         srRefresh.post{
             srRefresh.isRefreshing= false
@@ -40,10 +42,10 @@ class OrderFilterActivity: kz.vozon.vozon.ui.ListActivity<kz.vozon.vozon.models.
         val hRemove = v.v_remove!!
 
     }
-    override fun onBindViewHolder2(holder: ViewHolder, item: kz.vozon.vozon.models.Location) {
+    override fun onBindViewHolder2(holder: ViewHolder, item: InfoTmp) {
         holder.hName.text = item.name
         holder.hRemove.setOnClickListener{
-            Shared.filter.remove(item)
+            Shared.Filter.remove(item)
             refresh!!.run()
         }
     }
@@ -56,7 +58,7 @@ class OrderFilterActivity: kz.vozon.vozon.ui.ListActivity<kz.vozon.vozon.models.
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.add -> {
-                val i = Intent(this, kz.vozon.vozon.ui.info.LocationActivity::class.java)
+                val i = Intent(this, FilterLocationActivity::class.java)
                 startActivityForResult(i, CITY_REQUEST_CODE)
                 return true
             }
@@ -68,8 +70,9 @@ class OrderFilterActivity: kz.vozon.vozon.ui.ListActivity<kz.vozon.vozon.models.
         if (resultCode == Activity.RESULT_OK) {
             when (requestCode) {
                 CITY_REQUEST_CODE -> {
-                    val location = data!!.get(kz.vozon.vozon.models.Location::class.java)
-                    Shared.filter.add(location)
+                    val location = data!!.get(InfoTmp::class.java)
+                    Shared.Filter.add(location,data.getStringExtra(Shared.type))
+                    norm(data.getStringExtra(Shared.type))
                     refresh!!.run()
                 }
             }

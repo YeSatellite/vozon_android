@@ -26,6 +26,8 @@
         <activity android:name="kz.vozon.vozon.ui.info.InfoTmpActivity" />
         <activity android:name="kz.vozon.vozon.ui.info.LocationActivity"
             android:label="Страна"/>
+        <activity android:name="kz.vozon.vozon.ui.info.FilterLocationActivity"
+            android:label="Страна"/>
         <activity android:name="kz.vozon.vozon.ui.info.MultiInfoActivity" />
         <activity android:name="kz.vozon.vozon.ui.info.TermsActivity"
             android:label="@string/terms_of_service"/>

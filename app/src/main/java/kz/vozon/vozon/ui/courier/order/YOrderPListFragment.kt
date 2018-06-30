@@ -14,9 +14,12 @@ class YOrderPListFragment : kz.vozon.vozon.ui.ListFragment<kz.vozon.vozon.models
 
 
     override fun refreshListener(adapter: ListAdapter, srRefresh: SwipeRefreshLayout) {
-        if(Shared.filter.isEmpty()) Shared.filter.add(Shared.currentUser.city!!)
-        val filter = Shared.filter.joinToString(separator = ",",transform = {it.id.toString()})
-        Api.courierService.orders(Shared.posted,filter).run2(srRefresh,{body ->
+        Api.courierService.orders(
+                Shared.posted,
+                Shared.Filter.countryList(),
+                Shared.Filter.regionList(),
+                Shared.Filter.cityList()
+        ).run2(srRefresh,{body ->
             adapter.list = body
             adapter.notifyDataSetChanged()
         },{ _, error ->

@@ -3,9 +3,12 @@ package kz.vozon.vozon.utility
 import android.app.Activity
 import android.content.SharedPreferences
 import kz.vozon.vozon.R
+import kz.vozon.vozon.models.InfoTmp
 import retrofit2.Call
 
 object Shared {
+
+    const val action = "action"
     object Action {
         const val acceptOffer = "accept_offer"
         const val done = "done"
@@ -14,8 +17,14 @@ object Shared {
     }
 
     const val user = "user"
-    const val action = "action"
     const val title = "title"
+
+    const val type = "type"
+    object Type {
+        const val country = "country"
+        const val region = "region"
+        const val city = "city"
+    }
 
     const val posted = "posted"
     const val waiting = "waiting"
@@ -23,7 +32,36 @@ object Shared {
 
     var call: Call<List<kz.vozon.vozon.models.InfoTmp>>? = null
     var list: List<kz.vozon.vozon.models.MultiInfo> = java.util.ArrayList()
-    val filter = arrayListOf<kz.vozon.vozon.models.Location>()
+
+    object Filter{
+        private val country = arrayListOf<InfoTmp>()
+        private val region = arrayListOf<InfoTmp>()
+        private val city = arrayListOf<InfoTmp>()
+
+        fun list() = arrayListOf<InfoTmp>().apply {
+            this.addAll(country)
+            this.addAll(region)
+            this.addAll(city)
+        }
+
+        fun remove(location: InfoTmp){
+            country.remove(location)
+            region.remove(location)
+            city.remove(location)
+        }
+
+        fun add(location: InfoTmp,type: String){
+            when (type){
+                Type.country -> country.add(location)
+                Type.region -> region.add(location)
+                Type.city -> city.add(location)
+            }
+        }
+
+        fun countryList() = country.joinToString(separator = ",",transform = {it.id.toString()})
+        fun regionList() = region.joinToString(separator = ",",transform = {it.id.toString()})
+        fun cityList() = city.joinToString(separator = ",",transform = {it.id.toString()})
+    }
 
     var preferences: SharedPreferences? = null
         private set

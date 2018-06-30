@@ -71,6 +71,8 @@ object Api {
 
         @GET("$path/city/")
         fun city(@Query("region") regionId: Long): Call<List<kz.vozon.vozon.models.Location>>
+        @GET("$path/city/")
+        fun cityTmp(@Query("region") regionId: Long): Call<List<kz.vozon.vozon.models.InfoTmp>>
 
         @GET("$path/region/")
         fun region(@Query("country") countryId: Long): Call<List<kz.vozon.vozon.models.InfoTmp>>
@@ -200,7 +202,10 @@ object Api {
 
         @GET("$path/order/")
         fun orders(@Query("status") status: String,
-                   @Query("start_point") filter: String? = null): Call<List<kz.vozon.vozon.models.Order>>
+                   @Query("start_point_c") filterC: String? = null,
+                   @Query("start_point_r") filterR: String? = null,
+                   @Query("start_point") filter: String? = null
+        ): Call<List<kz.vozon.vozon.models.Order>>
 
         @POST("$path/order/{id}/offer/")
         fun offerAdd(@Path("id") orderId: Long,@Body offer: kz.vozon.vozon.models.Offer): Call<kz.vozon.vozon.models.Offer>

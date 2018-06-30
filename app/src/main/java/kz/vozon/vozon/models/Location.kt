@@ -5,24 +5,25 @@ import com.google.gson.annotations.SerializedName
 
 import java.io.Serializable
 
-class Location : Serializable {
-    @Expose var id: Long? = null
-
-    @Expose var name: String? = null
+open class Location : InfoTmp() {
 
     @SerializedName("region_name")
-    @Expose var regionName: String? = null
+    @Expose
+    var regionName: String? = null
 
     @SerializedName("country_name")
-    @Expose var countryName: String? = null
+    @Expose
+    var countryName: String? = null
 
-    fun getShortName(): String{
+    fun getShortName(): String {
         return "$name, $countryName"
     }
-    fun getShortName(startDetail: String): String{
+
+    fun getShortName(startDetail: String): String {
         return "$name, $countryName, $startDetail"
     }
-    fun getShortXName(startDetail: String): String{
+
+    fun getShortXName(startDetail: String): String {
         return "$name, $startDetail"
     }
 
@@ -32,6 +33,7 @@ class Location : Serializable {
         this.name != other.name -> "Междугородный"
         else -> "Внутри Города"
     }
+
     override fun toString(): String {
         return """
             |User(id=$id,
